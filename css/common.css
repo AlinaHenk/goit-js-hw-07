@@ -24,11 +24,19 @@ img {
   margin: 18px;
 }
 
-.item > li {
-  background-color: #f1f1f1;
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
+.item {
+  border-radius: 8px;
+  padding: 16px;
+  width: 392px;
+  height: 216px;
+  background: #f6f6fe;
+  margin-bottom: 24px;
+}
+
+#categories {
+  border-radius: 8px;
+  padding: 24px;
+  width: 440px;
+  height: 748px;
+  background: #fff;
 }
