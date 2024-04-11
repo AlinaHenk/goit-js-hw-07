@@ -5,15 +5,19 @@ registerForm.addEventListener("submit", handleSubmit);
 function handleSubmit(event) {
   
   const form = event.target;
-  const login = form.elements.email.value.trim();
-  const password = form.elements.password.value.trim();
+  const formLogin = form.elements.email.value.trim();
+  const formPassword = form.elements.password.value.trim();
   event.preventDefault();
 
-  if (login === "" || password === "") {
+  if (formLogin === "" || formPassword === "") {
     alert("All form fields must be filled in");
   }
   else {
-    console.log(`Login: ${login}, Password: ${password}`);
+    const object = {
+      email: formLogin,
+      password: formPassword
+    }
+    console.log(object);
     form.reset();
   }
 }

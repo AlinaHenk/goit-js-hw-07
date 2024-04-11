@@ -5,7 +5,7 @@ btn.addEventListener("click", event => {
   const body = document.querySelector("body");
   body.setAttribute("style", `background-color: ${colorCode}`);
   const color = document.querySelector(".color");
-  color.setAttribute("style", `color: ${colorCode}`);
+  color.textContent = colorCode;
 });
 
 function getRandomHexColor() {
